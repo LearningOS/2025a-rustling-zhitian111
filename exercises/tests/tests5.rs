@@ -31,15 +31,12 @@ unsafe fn modify_by_address(address: usize) {
     // TODO: Fill your safety notice of the code block below to match your
     // code's behavior and the contract of this function. You may use the
     // comment of the test below as your format reference.
-    unsafe {
-        todo!("Your code goes here")
-    }
+    unsafe { todo!("Your code goes here") }
 }
 
 #[cfg(test)]
 mod tests {
     use super::*;
-
     #[test]
     fn test_success() {
         let mut t: u32 = 0x12345678;
