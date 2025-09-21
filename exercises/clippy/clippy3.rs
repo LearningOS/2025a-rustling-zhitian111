@@ -10,7 +10,8 @@
 #[allow(clippy::unnecessary_literal_unwrap, clippy::let_unit_value)]
 fn main() {
     let my_option: Option<()> = None;
-    if my_option.is_none() {
+    #[allow(clippy::unnecessary_unwrap)]
+    if my_option.is_some() {
         my_option.unwrap();
     }
 
